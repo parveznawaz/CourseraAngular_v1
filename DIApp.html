@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="DIApp">
+<head>
+    <meta charset="utf-8" />
+    <script src="angular.min.js"></script>
+    <script src="DIApp.js"></script>
+    <title>Name Calculator</title>
+    <style>body{font-size: 1.3em;}</style>
+</head>
+<body>
+  <h1>DI App</h1>
+  <div ng-controller="DIAppCtrl">
+    <div>
+        Your name:    <input type="text" ng-model="name" ng-blur="upper();"/>
+    </div>
+  </div>
+</body>
+</html>

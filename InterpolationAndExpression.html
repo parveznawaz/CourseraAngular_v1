@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="InterpolationAndExpressionApp">
+<head>
+    <meta charset="utf-8" />
+    <script src="angular.min.js"></script>
+    <script src="InterpolationAndExpression.js"></script>
+    <title>Name Calculator</title>
+    <style>body{font-size: 1.3em;}</style>
+</head>
+<body>
+  <h1>Interpolation And Expression.</h1>
+  <div ng-controller="InterpolationAndExpressionCtrl">
+    <div>
+        {{name}} has a massage for you <br />
+        {{sayMessage()}}
+        <button ng-click="feedMe()">Feed</button>
+        <br />
+        <img ng-src="images/{{stateOfBeing}}.png" />
+    </div>
+  </div>
+</body>
+</html>
