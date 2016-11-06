@@ -10,6 +10,6 @@
 8. git status
 9. git config --global user.email "parvez.nawaz@gmail.com"
 10. git config --global user.name "Parvez"
-11. git commit -m "first we file" 
+11. git commit -m "first we file"
 12. git status
 13. git push

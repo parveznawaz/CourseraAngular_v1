@@ -13,9 +13,15 @@
     <div>
         {{name}} has a massage for you <br />
         {{sayMessage()}}
+        {{sayLoveMessage()}}
         <button ng-click="feedMe()">Feed</button>
+        Cost is {{cookieCost|currency:"BDT":4}}
         <br />
         <img ng-src="images/{{stateOfBeing}}.png" />
+        <div>
+            Truth:{{sayLoveMessage()|truth:'Parvez':'Tiri'|uppercase}}
+
+        </div>
     </div>
   </div>
 </body>

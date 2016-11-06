@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="ServiceApp">
+<head>
+    <meta charset="utf-8" />
+    <script src="angular.min.js"></script>
+    <script src="ServiceApp.js"></script>
+    <title>Service app</title>
+    <style>body{font-size: 1.3em;}</style>
+</head>
+<body>
+  <h1>Service app</h1>
+  <div ng-controller="ShoppingListAddCtrl as itemAdder">
+    <input type="text" ng-model="itemAdder.itemName" placeholder="item name" />
+    <input type="text" ng-model="itemAdder.itemQuantity" placeholder="item quantity" />
+    <button ng-click="itemAdder.addItem()">Add to shopping list</button>
+  </div>
+
+  <div ng-controller="ShoppingListShowCtrl as showList">
+    <ol>
+      <li ng-repeat="item in showList.items">
+        {{item.quantity}} of {{item.name}}
+        <button ng-click="showList.removeItem($index)">Remove</button>
+      </li>
+    </ol>
+  </div>
+</body>
+</html>

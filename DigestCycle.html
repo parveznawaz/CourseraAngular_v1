@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="DigestCycleApp">
+<head>
+    <meta charset="utf-8" />
+    <script src="angular.min.js"></script>
+    <script src="DigestCycle.js"></script>
+    <title>Name Calculator</title>
+    <style>body{font-size: 1.3em;}</style>
+</head>
+<body>
+  <h1>Digest Cycle.</h1>
+  <div ng-controller="DigestCycleCtrl">
+    <div>
+        Number of Watchers# {{showNumberOfWatchers()}}
+    </div>
+    <div>
+      <button ng-click="countOnce()">Up Once Counter</button>
+      Once Counter value: {{onceCounter}}
+    </div>
+    <div>
+      <button ng-click="upCounter()">Up counter</button>
+      Up Counter value; {{counter}}
+    </div>
+    <div>
+      {{::fullName}}
+      <button ng-click="setFullName()">Set Full name</button>
+    </div>
+  </div>
+</body>
+</html>
